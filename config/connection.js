@@ -3,7 +3,7 @@ require('dotenv').config();
 
 let sequelize;
 
-if (process.envJWSDB_URL) {
+if (process.env.JWSDB_URL) {
     sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
     sequelize = new Sequelize(
@@ -18,4 +18,4 @@ if (process.envJWSDB_URL) {
     );
 }
 
-modeule.exports = sequelize;
+module.exports = sequelize;
