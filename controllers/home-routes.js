@@ -2,7 +2,18 @@ const router = require('express').Router();
 const { Post, Comment, User } = require('../models/');
 const withAuth = require('../utils/auth');
 
-
+// get all posts for homepage
+router.get('/', async (req, res) => {
+    try {
+      const postData = await Post.findAll({
+        include: [User],
+      });
+      const posts = postData.map((post) => post.get({ plain: true }));
+      res.render('all-posts-admin', { posts, loggedIn: req.session.loggedIn});
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
 
 // get single post
 router.get('/post/:id', withAuth, async (req, res) => {
@@ -29,6 +40,8 @@ router.get('/post/:id', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
 
 // login and signup route.
 router.get('/login', (req, res) => {
