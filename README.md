@@ -14,4 +14,4 @@ This application is used for developers to write about tech in a blog. In the th
 # Links
 [Github](https://github.com/rangelf09/Technical-Concept-Blog)
 
-[Heroku]()
+[Heroku](https://thecnicalconcept-blog.herokuapp.com/)
