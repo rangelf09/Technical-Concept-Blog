@@ -14,7 +14,7 @@ if (process.env.JWSDB_URL) {
             host: 'localhost',
             dialect: 'mysql',
             port: 3306
-        }
+        },
     );
 }
 
