@@ -1,7 +1,6 @@
 const postId = document.querySelector('input[name="post-id"]').value;
 
-console.log("testing");
-console.log(postId);
+
 
 const commentFormHandler = async (event) => {
   event.preventDefault();

@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
 }
 
@@ -264,4 +264,5 @@ main {
 .btn,
 #post-title {
     width: 100%;
-}
+    color: #2c2307;
+} */

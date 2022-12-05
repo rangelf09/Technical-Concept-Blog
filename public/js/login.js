@@ -8,7 +8,7 @@ const loginFromHandler = async function (event) {
 
     const response = await fetch("api/user/login", {
         method: "POST",
-        body:Json.stringify({
+        body: JSON.stringify({
             username: usernameEl.value,
             password: passwordEl.value
         }),
