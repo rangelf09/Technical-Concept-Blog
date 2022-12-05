@@ -1,7 +1,6 @@
-const { Json } = require("sequelize/types/utils");
 
 const loginFromHandler = async function (event) {
-    event.preventdefault();
+    event.preventDefault();
 
     const usernameEl = docuemtn.querySelector("#username-input-login");
     const passwordEl = docuement .querySelector("#password-input-login");
