@@ -11,7 +11,7 @@ class Comment extends Model {}
       primaryKey: true,
       autoIncrement: true,
     },
-    text: {
+    commentContent: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
